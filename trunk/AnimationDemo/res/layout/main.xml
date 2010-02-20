@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:orientation="vertical"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:orientation="vertical">
+		<Spinner android:id="@+id/animationType" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:drawSelectorOnTop="true" />
+		<Spinner android:id="@+id/spinner" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:layout_weight="1"
+			android:textSize="13sp">
+		</Spinner>
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:orientation="horizontal">
+
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:textColor="#ffffff"
+				android:text="@string/duration">
+			</TextView>
+			<EditText android:id="@+id/duration" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="700"
+				android:hint="@string/duration" android:textSize="18sp" android:inputType="number">
+			</EditText>
+
+			<Button android:id="@+id/play" android:layout_width="75dp"
+				android:layout_height="wrap_content" android:text="@string/animate">
+			</Button>
+		</LinearLayout>
+	</LinearLayout>
+	<LinearLayout android:id="@+id/frame"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:background="@drawable/mygarden">
+		<TextView android:id="@+id/image" android:layout_width="fill_parent"
+			android:layout_height="fill_parent" android:drawableTop="@drawable/ball"
+			android:scaleType="fitCenter" />
+
+	</LinearLayout>
+</LinearLayout>
